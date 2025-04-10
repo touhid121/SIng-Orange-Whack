@@ -192,7 +192,6 @@ button:hover{
 
 
 
-/* Add the slide-in animation for oranges */
 .orange {
   background: url('images/orange_smile.png') bottom center no-repeat;
   background-size: 60%;
@@ -200,15 +199,14 @@ button:hover{
   top: 100px;
   width: 100%;
   height: 100%;
-  transition: transform 0.4s ease-out; /* Smooth transition */
-  transform: translateY(100px); /* Start below the hole */
+  transition: transform 0.4s ease-out; 
+  transform: translateY(100px); 
 }
 
 .orange.slide-in {
-  transform: translateY(0); /* Move up into the hole */
+  transform: translateY(0); 
 }
 
-/* Modify the hole styling to make the orange "pop" from inside the hole */
 .hole {
   flex: 1 0 25%;
   overflow: hidden;
@@ -262,7 +260,6 @@ button:hover{
 }
 
 
-/* Smooth overlay transitions */
 .start_dimmed,
 .end_scene {
     opacity: 0;
@@ -286,7 +283,6 @@ button:hover{
     pointer-events: auto;
 }
 
-/* Overlay inner content styling */
 .end_scene .overlay {
     text-align: center;
     color: #fff;
@@ -355,4 +351,43 @@ footer{
 
 strong h1{
   color: #f7d3b6;
+}
+
+
+@media (max-width: 768px) {
+  .container, .game, .brd1, .start_dimmed, .end_scene {
+    display: none !important;
+  }
+
+  #mobile-warning {
+    display: flex;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .brd1 {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .score_box,
+  .highscore_box,
+  .live {
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .score,
+  .highscore,
+  .life {
+    width: auto;
+    min-width: 3rem;
+    font-size: 1.1rem;
+  }
 }
