@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cut The Orange</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (window.innerWidth < 720) { 
+          document.body.innerHTML = `
+            <div style="display:flex;justify-content:center;align-items:center;height:100vh;text-align:center;padding:20px;">
+              <h2>This game is only available on desktop devices.<br>Please visit from a laptop or desktop computer.</h2>
+            </div>
+          `;
+        }
+      </script>
+      
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="start_dimmed">
+          <button type="button" class="start_button -classic">Classic</button>
+          <button type="button" class="start_button -survival">Survival</button>
+          <button type="button" class="start_button -endless">Endless</button>
+        </div>
+    <div>
+   <strong><h1>XOXO;&nbsp;Orange Dynasty</h1>
+    
+</strong>
+   <div class="brd1">
+    <h2 class="score_box">score &colon;<span class="score">0</span></h2>
+    <h2 class="highscore_box">High score &colon;<span class="highscore">0</span></h2>
+    <h2 class="live">Remaining life&colon;<span class="life">3</span></h2>
+    <button class="rules" id="gameRuleBtn">Game Rules?</button>
+    <div id="gameRulePopup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <h3>🍊 Game Rules</h3>
+          <ul>
+            <li>Click oranges to score.</li>
+            <li>Classic: 30 seconds to playtime.</li>
+            <li>Survival: You have 3 lives. </li>
+            <li>Endless: Play forever. </li>
+            
+          </ul>
+        </div>
+      </div>
+</div>
+  <div class="extra">
+    <button id="endNowBtn" class="end-now-button">End Now</button>
+
+    <button id="pauseBtn" class="pause-button">Pause</button>
+  </div>
+    <div id="timer-container">
+        <span class="timer"> <span id="time" style="width: 60%;"></span></span>
+      </div>
+     
+
+    </div> 
+       <div class="game">
+       
+                <div class=" hole hole1">
+                    <div class="orange"></div>
+                </div>
+                <div class=" hole hole2">
+                    <div class="orange"></div>
+                </div>
+                <div class=" hole  hole3 ">
+                    <div class="orange"></div>
+                </div>
+                <div class="hole hole4">
+                    <div class="orange"></div>
+                </div>
+                <div class="hole hole5">
+                    <div class="orange"></div>
+                </div>
+                <div class="hole hole6">
+                    <div class="orange"></div>
+                </div>
+                <div class="hole hole7">
+                    <div class="orange"></div>
+                </div>
+                <div class="hole hole8">
+                    <div class="orange"></div>
+                </div>
+                <div class="hole hole9">
+                    <div class="orange"></div>
+                </div>      
+    
+</div>
+
+<!-- <button id="restartBtn" style="display: none;">Start Again</button> -->
+
+<footer>
+    <div>
+        <p>&copy; 0xTowhid. All rights reserved.</p>
+        <a href="https://x.com/0xTowhid" target="_blank">
+            <img src="images/foot2.png" alt="X" width="25px" height="25x">
+        </a>
+  </div>
+   
+</footer>
+
+<div class="end_scene">
+    <div class="overlay">
+        <h1 class="congo"> Played well Signor!</h1><br>
+        <h2 class="scr">You have scored <span class="final-score">0</span></h2>
+      <button class="restarBtn" id="playAgainBtn" >Play Again</button>
+      <button class="share" id="shareNowBtn">Share on X</button>
+      
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
